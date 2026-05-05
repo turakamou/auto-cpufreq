@@ -4,9 +4,10 @@ Description=auto-cpufreq - Automatic CPU speed & power optimizer for Linux
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/opt/auto-cpufreq/venv
-Environment=PYTHONPATH=/opt/auto-cpufreq
-ExecStart=/opt/auto-cpufreq/venv/bin/python /opt/auto-cpufreq/venv/bin/auto-cpufreq --daemon
+WorkingDirectory=/var/opt/auto-cpufreq/venv
+Environment=PYTHONPATH=/var/opt/auto-cpufreq
+Environment=PATH=/var/opt/auto-cpufreq/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/var/opt/auto-cpufreq/venv/bin/python /var/opt/auto-cpufreq/venv/bin/auto-cpufreq --daemon
 Restart=on-failure
 
 [Install]

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-exec /usr/local/bin/auto-cpufreq --daemon
+exec /var/opt/auto-cpufreq/bin/auto-cpufreq --daemon
 

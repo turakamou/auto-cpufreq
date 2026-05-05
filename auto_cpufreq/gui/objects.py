@@ -552,7 +552,7 @@ class AboutDialog(Gtk.Dialog):
         self.add_button("Close", Gtk.ResponseType.CLOSE)
         self.set_default_size(400, 350)
         img_buffer = GdkPixbuf.Pixbuf.new_from_file_at_scale(
-            filename="/usr/local/share/auto-cpufreq/images/icon.png",
+            filename="/var/opt/auto-cpufreq/share/images/icon.png",
             width=150,
             height=150,
             preserve_aspect_ratio=True

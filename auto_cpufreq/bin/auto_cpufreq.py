@@ -170,7 +170,7 @@ def main(monitor, live, daemon, install, update, remove, force, turbo, config, s
             deploy_complete_msg()
         elif update:
             root_check()
-            custom_dir = "/opt/auto-cpufreq/source"
+            custom_dir = "/var/opt/auto-cpufreq/source"
             for arg in sys.argv:
                 if arg.startswith("--update="):
                     custom_dir = arg.split("=")[1]

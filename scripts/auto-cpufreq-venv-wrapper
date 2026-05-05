@@ -10,8 +10,8 @@ err_exit() {
 }
 
 # load python virtual environment
-opt_path=/opt/auto-cpufreq
+opt_path=/var/opt/auto-cpufreq
 venv_bin_dir=$opt_path/venv/bin
 . "$venv_bin_dir/activate"
 
-PYTHONPATH=$opt_path $venv_bin_dir/python $venv_bin_dir/auto-cpufreq "$@"
+PYTHONPATH=$opt_path PATH="$opt_path/bin:$PATH" $venv_bin_dir/python $venv_bin_dir/auto-cpufreq "$@"
